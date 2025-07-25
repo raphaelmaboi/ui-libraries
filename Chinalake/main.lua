@@ -42,8 +42,8 @@ local function CubicBezier(p0, p1, p2, p3, t)
     return Vector2(x, y);
 end
 
-local GuiEngine = loadstring(game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/GuiEngine.lua"))();
-local ProjectionEngine = loadstring(game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/3DMath.lua"))();
+local GuiEngine = loadstring(game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/GuiEngine.lua"))();
+local ProjectionEngine = loadstring(game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/3DMath.lua"))();
 
 if (not isfolder("Interwebz")) then 
     makefolder("Interwebz"); 
