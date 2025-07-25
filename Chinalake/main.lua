@@ -42,8 +42,8 @@ local function CubicBezier(p0, p1, p2, p3, t)
     return Vector2(x, y);
 end
 
-local GuiEngine = loadstring(game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/GuiEngine.lua"))();
-local ProjectionEngine = loadstring(game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/3DMath.lua"))();
+local GuiEngine = loadstring(game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/Lua/GuiEngine.lua"))();
+local ProjectionEngine = loadstring(game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/Lua/3DMath.lua"))();
 
 if (not isfolder("Interwebz")) then 
     makefolder("Interwebz"); 
@@ -72,9 +72,9 @@ Interface.Theme = {
 
 Interface.Images = {
     Checkmark = crypt.base64.decode("iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAdUlEQVR4nO2TQQ6AIAwE+wo0flGea0RfM4bAgQMSIuViuklvdGC3RcRk6hWwArtMhAeSvDZ8AY4Mv4DN4DIUS9yEOLTOgYbW2VqzbzUyAs8AV1i/S+tq21K7BO1VrEQRPsfS6UT/ExVOzlw6L39x4qbATf/QA+J3Itr5qTUAAAAAAElFTkSuQmCC");
-    Saturation = game:HttpGet("https://raw.githubusercontent.com/1e20/ChinaLake/main/Assets/Images/saturation.png");
-    Hue = game:HttpGet("https://raw.githubusercontent.com/1e20/ChinaLake/main/Assets/Images/hue.png");
-    Alpha = game:HttpGet("https://raw.githubusercontent.com/1e20/ChinaLake/main/Assets/Images/alpha.png");
+    Saturation = game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/Images/saturation.png");
+    Hue = game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/Images/hue.png");
+    Alpha = game:HttpGet("https://raw.githubusercontent.com/raphaelmaboi/ui-libraries/refs/heads/main/Chinalake/Assets/Images/alpha.png");
 }; 
 
 function Interface.PipeObjectThemeData(ThemeProperty, Object)
